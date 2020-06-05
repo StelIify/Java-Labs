@@ -44,7 +44,7 @@ public class Main {
             System.out.println(words[i]);
         }
         
-        //Getting array distinct words
+        //Getting array of distinct words
         String distinctWords [] = data.split(" ");
         String temp;
         
