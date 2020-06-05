@@ -33,7 +33,17 @@ public class Main {
         System.out.println(history);
         
         //Checking string as a palindrome 
-        String str = "Oleksandr";
+        String str = "It was this scar, that made Harry so particularly unusual!";
+        str = str.replaceAll(" ","")                            
+             .replaceAll(",","")
+             .replaceAll("\\.","")
+             .replaceAll("_","")
+             .replaceAll("-","")
+             .replaceAll("-","")
+             .replaceAll("\\?","")
+             .replaceAll("\\!","")
+             .replaceAll("\\\"", "");
+        
         String reverse = new StringBuffer(str).reverse().toString();
         if (str.equals(reverse))
             System.out.println("String is palindrome");
