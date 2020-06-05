@@ -1,3 +1,11 @@
+/*
+ * Classname Main
+ *
+ * Cycle Practice
+ *
+ * Copyright Oleksandr Zorenko KNUTE
+ */
+
 package com.company;
 
 public class Main {
