@@ -4,6 +4,12 @@
  * Array Practice
  *
  * Copyright Oleksandr Zorenko KNUTE
+ *
+ *   1. Find in the net and download a text version of a novel about Harry Potter.  For instance,  "Harry Potter and the Sorcerer's Stone".
+ *   2. Split the novel into an array of words.
+ *   3. Clean the words from a punctuation signs.
+ *   4. Create another array containing distinct words.
+ *   5. Order the words in alphabetic order.
  */
 
 package com.company;
