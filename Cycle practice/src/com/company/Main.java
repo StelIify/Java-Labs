@@ -27,7 +27,8 @@ public class Main {
                 " i'm a student " + student);
 
         System.out.println(history);
-
+        
+        //Checking string as a palindrome 
         String str = "Oleksandr";
         String reverse = new StringBuffer(str).reverse().toString();
         if (str.equals(reverse))
