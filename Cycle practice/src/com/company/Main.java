@@ -4,6 +4,10 @@
  * Cycle Practice
  *
  * Copyright Oleksandr Zorenko KNUTE
+ *
+ * 1.Write to console 8 facts about yourself using primitive types. (2 points)
+ * 2.Check a string as a palindrome ( 2 points)
+ * 3.Get the area limited by the following functions   x = 0 .. 3.14;    y = sin(x);   y = 0.1 * k, where k is the last cipher in your student card; (2 points)
  */
 
 package com.company;
@@ -35,6 +39,27 @@ public class Main {
             System.out.println("String is palindrome");
         else
             System.out.println("String is not palindrome");
+        
+         //Getting the area
+         double finish = Math.PI;
+         double deltaX = 0.01;
+         double y = 0.1;                                                        
+         double rectangle;
+         double area = 0;
+
+          for (double x = 0; x < finish; x += deltaX) 
+          {
+             if (Math.sin(x) <= y) 
+             {
+               rectangle = Math.sin(x) * deltaX;
+             }
+             else
+             {
+                rectangle = y * deltaX;
+             }
+                area += rectangle;
+             }
+            System.out.println(area);
 
     }
 }
