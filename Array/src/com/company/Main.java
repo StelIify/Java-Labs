@@ -1,3 +1,11 @@
+/*
+ * Classname Main
+ *
+ * Array Practice
+ *
+ * Copyright Oleksandr Zorenko KNUTE
+ */
+
 package com.company;
 
 import java.io.Console;
@@ -10,7 +18,8 @@ public class Main {
     {
         String data = "";
         String [] words = null;
-
+        
+        // Read novel from the file
         File myFile = new File("C:\\Users\\StelLify\\Desktop\\Harry Potter.txt");
         Scanner myReader = new Scanner(myFile);
 
@@ -20,26 +29,29 @@ public class Main {
             System.out.println(data);
         }
         myReader.close();
-
+        
+        // Spliting novel into an array of words and cleaning from punctuation signs
         words = data.replaceAll("[^A-Za-z]+", "").split(" ");
 
         for (int i=0; i< words.length;i++)
         {
             System.out.println(words[i]);
         }
-
-        String notSortedArray [] = new String[] { "Harry", "looked", "nothing", "like", "the", "rest"};
+        
+        //Getting array distinct words
+        String distinctWords [] = data.split(" ");
         String temp;
-
-        for (int i = 0; i < notSortedArray.length; i++)
+        
+        //Order the words in alphabetic order
+        for (int i = 0; i < distinctWords.length; i++)
         {
-            for (int j = i + 1; j < notSortedArray.length; j++)
+            for (int j = i + 1; j < distinctWords.length; j++)
             {
-                if (notSortedArray[i].compareTo(notSortedArray[j])>0)
+                if (distinctWords[i].compareTo(distinctWords[j])>0)
                 {
-                    temp = notSortedArray[i];
-                    notSortedArray[i] = notSortedArray[j];
-                    notSortedArray[j] = temp;
+                    temp = distinctWords[i];
+                    distinctWords[i] = distinctWords[j];
+                    distinctWords[j] = temp;
                 }
             }
         }
