@@ -48,7 +48,6 @@ public class Rhombus
         this.angle = angle;
     }
 
-
     //Getting shortDiagonal
     public double getShortDiagonal()
     {
@@ -60,11 +59,13 @@ public class Rhombus
     {
         return side * Math.sqrt(2 + 2 * Math.cos(angle));
     }
+    
     //Calculate Area of the Rhombus
     public double getArea()
     {
         return 0.5 * getLongDiagonal() * getShortDiagonal();
     }
+    
     //Calculate Perimeter of the Rhombus
     public double getPerimeter()
     {
@@ -80,34 +81,37 @@ public class Rhombus
 
     //Overriding toString method
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Rombus{" +
-                "side= " + side +
-                "angle= " + angle +
-                "area= " + this.getArea() +
-                "perimeter= " + this.getPerimeter()+
-                "long diagonal= " + this.getLongDiagonal()+
-                "short diagonal= " + this.getShortDiagonal()+
-                "circle radius " + this.getCircleRadius()+
-                "hashCode= " + this.hashCode()+
-                '}';
+             "side= " + side +
+              "angle= " + angle +
+              "area= " + this.getArea() +
+              "perimeter= " + this.getPerimeter()+
+              "long diagonal= " + this.getLongDiagonal()+
+              "short diagonal= " + this.getShortDiagonal()+
+              "circle radius " + this.getCircleRadius()+
+              "hashCode= " + this.hashCode()+
+              '}';
 
     }
 
 
     //Override equals method
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) 
+    {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Rhombus rhombus = (Rhombus) o;
-        return getSide() == rhombus.getSide() &&
-                Double.compare(rhombus.getAngle(), getAngle()) == 0;
+        
+        return getSide() == rhombus.getSide() && Double.compare(rhombus.getAngle(), getAngle()) == 0;
     }
 
     //Override hash method
     @Override
-    public int hashCode() {
+    public int hashCode() 
+    {
         return Objects.hash(getSide(), getAngle());
     }
 }
