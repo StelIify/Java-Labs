@@ -73,9 +73,12 @@ public class Rectangle implements IGeometry, IPackaging
     @Override
     public String toString()
     {
-        return "Rectangle{" +
+        rreturn "Rectangle{" +
                 "length=" + length +
                 ", width=" + width +
+                ", area=" + getArea() +
+                ", perimeter=" + getPerimeter() +
+                ", diagonal=" + getDiagonal() +
                 '}';
     }
 
