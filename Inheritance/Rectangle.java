@@ -13,10 +13,9 @@ package com.company;
 
 public class Rectangle
 {
-    protected int length;
-    protected int width;
-    protected final double PI = 3.14;
-
+    private int length;
+    private int width;
+    
     public  Rectangle()
     {
 
