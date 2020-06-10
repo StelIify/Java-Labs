@@ -46,7 +46,8 @@ public class Rectangle
     {
         this.width = width;
     }
-
+    
+    //Calculating area
     public int getArea()
     {
       return length * width;
