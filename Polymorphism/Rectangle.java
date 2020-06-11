@@ -14,9 +14,9 @@ package com.company;
 
 public class Rectangle implements IGeometry, IPackaging
 {
-    protected int length;
-    protected int width;
-    protected final double PI = 3.14;
+    private int length;
+    private int width;
+    private final double PI = 3.14;
 
     public  Rectangle()
     {
