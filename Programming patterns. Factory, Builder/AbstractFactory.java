@@ -22,7 +22,7 @@ public class AbstractFactory
         {
             case RECTANGLE: return new Rectangle(a, b);
             case RHOMBUS: return new Rhombus(a, b);
-            case CONE: return new Triangle(a, b);
+            case TRIANGLE: return new Triangle(a, b);
             default: return null;
         }
     }
