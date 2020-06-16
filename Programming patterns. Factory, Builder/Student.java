@@ -274,6 +274,7 @@ public class Student
         this.academicPerformance = academicPerformance;
     }
 
+    //Overriding toString method
     @Override
     public String toString() {
         return "Student{" +
