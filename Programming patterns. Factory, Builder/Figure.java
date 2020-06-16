@@ -2,5 +2,5 @@ package com.company;
 
 public enum Figure
 {
-    RECTANGLE, RHOMBUS, CONE
+    RECTANGLE, RHOMBUS, TRIANGLE
 }
