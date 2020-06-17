@@ -314,7 +314,9 @@ public class Student
         {
             this.studentToBuild = new Student();
         }
-
+        
+        //Creating setSimilarTo method 
+        //Using if we want for the new object the same information that already created object has
         public Builder setSimilarTo(Student student)
         {
             this.studentToBuild.firstName = student.firstName;
@@ -344,8 +346,8 @@ public class Student
             return this;
         }
 
-         //Creating Setters
-
+         //Creating Setters 
+         //Using builder setters if we want to change some information after using setSimilarTo method
         public Builder setFirstName(String firstName)
         {
             studentToBuild.setFirstName(firstName);
