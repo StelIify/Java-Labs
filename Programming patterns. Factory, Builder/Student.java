@@ -19,7 +19,7 @@ import java.time.LocalDate;
 public class Student
 {
     private String firstName;
-    private String secondName;
+    private String surname;
     private String patronymic;
     private String dateOfBirth;
     private String countryOfBirth; // Country in which was born
@@ -43,7 +43,7 @@ public class Student
     private boolean scienceAchievements;
     private String academicPerformance; // what grades student has, average or good
 
-    public Student(String firstName, String secondName, String patronymic, String dateOfBirth,
+    public Student(String firstName, String surname, String patronymic, String dateOfBirth,
                    String countryOfBirth, int age, int height, int weight, String gender,
                    String homeAddress, long phoneNumber, String parentsAddress, String emergencyParentContact,
                    long parentPhoneNumber, String university, String universityEntryDate, boolean budgetPlace,
@@ -51,7 +51,7 @@ public class Student
                    String kindOfSportingAchievement, boolean scienceAchievements, String academicPerformance)
     {
         this.firstName = firstName;
-        this.secondName = secondName;
+        this.surname = surname;
         this.patronymic = patronymic;
         this.dateOfBirth = dateOfBirth;
         this.countryOfBirth = countryOfBirth;
@@ -90,12 +90,12 @@ public class Student
         this.firstName = firstName;
     }
 
-    public String getSecondName() {
+    public String getSurname() {
         return secondName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPatronymic() {
@@ -279,7 +279,7 @@ public class Student
     public String toString() {
         return "Student{" +
                 "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
+                ", surname='" + surname + '\'' +
                 ", patronymic='" + patronymic + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", countryOfBirth='" + countryOfBirth + '\'' +
@@ -320,7 +320,7 @@ public class Student
         public Builder setSimilarTo(Student student)
         {
             this.studentToBuild.firstName = student.firstName;
-            this.studentToBuild.secondName = student.secondName;
+            this.studentToBuild.surname = student.surname;
             this.studentToBuild.patronymic = student.patronymic;
             this.studentToBuild.dateOfBirth = student.dateOfBirth;
             this.studentToBuild.countryOfBirth = student.countryOfBirth;
@@ -354,9 +354,9 @@ public class Student
             return this;
         }
 
-        public Builder setSecondName(String secondName)
+        public Builder setSurname(String surname)
         {
-            studentToBuild.setSecondName(secondName);
+            studentToBuild.setSurname(surname);
             return this;
         }
 
