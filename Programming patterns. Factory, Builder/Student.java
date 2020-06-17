@@ -41,7 +41,7 @@ public class Student
     private boolean sportAchievements;
     private String kindOfSportingAchievement; // What kind of Achievements student has
     private boolean scienceAchievements;
-    private String academicPerformance;
+    private String academicPerformance; // what grades student has, average or good
 
     public Student(String firstName, String secondName, String patronymic, String dateOfBirth,
                    String countryOfBirth, int age, int height, int weight, String gender,
