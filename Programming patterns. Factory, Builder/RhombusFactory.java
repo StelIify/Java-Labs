@@ -1,21 +1,20 @@
-/*
- * RhombusFactory
- *
- * Programming patterns. Factory, Builder
- *
- * Copyright Oleksandr Zorenko KNUTE
- *
- * Develop for your class
- *
- * 1. Factory.
- * 2. Abstract factory.
- * 3. Create a class Student  - 25 fields.
- * 4. Create a builder for the class Student
- */
+/**
+ * @author Oleksandr Zorenko KNUTE
+ * @version 1.0
+ * Classname: RhombusFactory
+ * Class represents the programming pattern 'Factory' for geometric figure Rhombus.
+    Module 2 Task 4. Programming patterns. Factory, Builder.
+    Task description: Develop Factory for your class
+**/
 package com.company;
 
 public class RhombusFactory
 {
+    /**
+     * Class constructor with parameters.
+     * @param side sets a side of Rhombus
+     * @param angle sets an angle of Rhombus
+     **/
     public static Rhombus create(int side, int angle)
     {
         Rhombus rhombus = new Rhombus(side, angle);
