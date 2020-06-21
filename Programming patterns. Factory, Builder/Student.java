@@ -1,6 +1,6 @@
 /**
  * @author Oleksandr Zorenko KNUTE
- * @version 1.0
+ * @version 21.06.2020
  * Classname Student
  * Class represents a person who is studying at university
     Module 2 Task 4. Programming patterns. Factory, Builder.
@@ -39,12 +39,14 @@ public class Student
     private boolean scienceAchievements;
     private String academicPerformance; // what grades student has, average or good
 
-    public Student(String firstName, String surname, String patronymic, String dateOfBirth,
-                   String countryOfBirth, int age, int height, int weight, String gender,
-                   String homeAddress, long phoneNumber, String parentsAddress, String emergencyParentContact,
-                   long parentPhoneNumber, String university, String universityEntryDate, boolean budgetPlace,
-                   String faculty, String specialisation, int yearOfStudy, boolean sportAchievements,
-                   String kindOfSportingAchievement, boolean scienceAchievements, String academicPerformance)
+    public Student(String firstName, String surname, String patronymic,
+                   String dateOfBirth, String countryOfBirth, int age,  
+                   int height, int weight, String gender, String homeAddress, 
+                   long phoneNumber, String parentsAddress, String emergencyParentContact,
+                   long parentPhoneNumber, String university, String universityEntryDate, 
+                   boolean budgetPlace,String faculty, String specialisation, int yearOfStudy,
+                   boolean sportAchievements,String kindOfSportingAchievement, 
+                   boolean scienceAchievements, String academicPerformance)
     {
         this.firstName = firstName;
         this.surname = surname;
