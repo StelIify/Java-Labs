@@ -1,6 +1,6 @@
 /**
  * @author Oleksandr Zorenko KNUTE
- * @version 1.0
+ * @version 21.06.2020
  * Classname AbstractFactory
  * Class represents the programming pattern 'Abstract factory' for geometric figure Rhombus
  *  Module 2 Task 4. Programming patterns. Factory, Builder.
