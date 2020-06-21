@@ -1,17 +1,13 @@
-/*
- * Student
- *
- * Programming patterns. Factory, Builder
- *
- * Copyright Oleksandr Zorenko KNUTE
- *
- * Develop for your class
- *
- * 1. Factory.
- * 2. Abstract factory.
- * 3. Create a class Student  - 25 fields.
- * 4. Create a builder for the class Student
- */
+/**
+ * @author Oleksandr Zorenko KNUTE
+ * @version 1.0
+ * Classname Student
+ * Class represents a person who is studying at university
+    Module 2 Task 4. Programming patterns. Factory, Builder.
+    Task description:
+    3. Create a class Student.
+    4. Create a builder for the class Student
+ **/
 package com.company;
 
 import java.time.LocalDate;
@@ -496,6 +492,9 @@ public class Student
         }
 
         //Building method
+        /**
+         * @return a built Student class instance
+         */
         public Student Build()
         {
             return studentToBuild;
