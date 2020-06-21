@@ -14,6 +14,7 @@ public class RhombusFactory
      * Class constructor with parameters.
      * @param side sets a side of Rhombus
      * @param angle sets an angle of Rhombus
+     * @return created instance of Rhombus
      **/
     public static Rhombus create(int side, int angle)
     {
