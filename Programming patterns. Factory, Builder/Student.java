@@ -315,11 +315,11 @@ public class Student
             this.studentToBuild = new Student();
         }
         
-        /*
+        /**
         * Creating setSimilarTo method 
         * Using if we want for the new object the same information that already created object has
         * @param student from which we take all the information
-        */
+        **/
         public Builder setSimilarTo(Student student)
         {
             this.studentToBuild.firstName = student.firstName;
