@@ -1,1 +1,1 @@
-# Java-Labs
+# Projects from Všemvs moodle java course 
