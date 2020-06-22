@@ -3,7 +3,7 @@
  * @version 22.06.2020
  * Classname LuxRoom
  * Module 3 Task 2. Laboratory work №2
- *
+ * Task description: Create LuxRoom class and implement IBookKeeping interface and all his methods
  **/
 package com.company.entity;
 
@@ -27,7 +27,7 @@ public class LuxRoom implements IBookKeeping
     {
 
     }
-
+    //Getters and Setters
     public String getHotelName() {
         return hotelName;
     }
@@ -61,7 +61,8 @@ public class LuxRoom implements IBookKeeping
     {
         this.serviceCharge = serviceCharge;
     }
-
+    
+    //Calculating room price based on room cost per day, number of staying days and service charge
     @Override
     public double getRoomPrice()
     {
