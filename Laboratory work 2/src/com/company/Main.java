@@ -113,7 +113,7 @@ public class Main {
             //Finding sum lux room price
         double sumLuxRoomPrice = rooms.stream().filter(r -> r instanceof OnlyBedRoom)
                 .mapToDouble(IBookKeeping::getRoomPrice).sum();
-            System.out.println("Sum lux room price is" + sumLuxRoomPrice);
+            System.out.println("Sum lux rooms price is" + sumLuxRoomPrice);
 
         if(sumOnlyBedRoomPrice > sumLuxRoomPrice)
         {
