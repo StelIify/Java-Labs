@@ -2,8 +2,8 @@
  * @author Oleksandr Zorenko KNUTE
  * @version 22.06.2020
  * Classname OnlyBedRoom
- *  Module 3 Task 2. Laboratory work №2
- *
+ * Module 3 Task 2. Laboratory work №2
+ * Task description: Create Only Bedroom class and implement IBookKeeping interface and all it's methods
  **/
 package com.company.entity;
 
