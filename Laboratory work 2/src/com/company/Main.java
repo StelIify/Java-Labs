@@ -101,7 +101,7 @@ public class Main {
             System.out.println("Average room price in only bedroom is " + averageOnlyBedRoomPrice);
 
         //Finding average lux room price
-        OptionalDouble averageLuxRoomPrice = rooms.stream().filter(r -> r instanceof OnlyBedRoom)
+        OptionalDouble averageLuxRoomPrice = rooms.stream().filter(r -> r instanceof LuxRoom)
                 .mapToDouble(IBookKeeping::getRoomPrice).average();
             System.out.println("Average lux room price is " + averageLuxRoomPrice);
 
@@ -111,7 +111,7 @@ public class Main {
             System.out.println("Sum price of only bedrooms is " + sumOnlyBedRoomPrice);
 
             //Finding sum lux room price
-        double sumLuxRoomPrice = rooms.stream().filter(r -> r instanceof OnlyBedRoom)
+        double sumLuxRoomPrice = rooms.stream().filter(r -> r instanceof LuxRoom)
                 .mapToDouble(IBookKeeping::getRoomPrice).sum();
             System.out.println("Sum lux rooms price is" + sumLuxRoomPrice);
 
