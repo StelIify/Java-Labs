@@ -3,7 +3,7 @@
  * @version 22.06.2020
  * Classname LuxRoom
  * Module 3 Task 2. Laboratory work №2
- * Task description: Create LuxRoom class and implement IBookKeeping interface and all his methods
+ * Task description: Create LuxRoom class and implement IBookKeeping interface and all it's methods
  **/
 package com.company.entity;
 
