@@ -51,17 +51,34 @@ public class Main {
             System.out.println(company.getName());
         }
 
-        // Designer top level parent
-        String designTopLevelParent = service.getTopLevelParent(design).getName();
-        System.out.println("Designer top level parent is: " + designTopLevelParent);
-
-        //  Designer top level parent
-        String lawyerTopLevelParent = service.getTopLevelParent(lawyer).getName();
+      
+        //  lawyer top level parent
+        String lawyerTopLevelParent = service.getTopLevelParent(cheif).getName();
         System.out.println("Lawyer top level parent is: " + lawyerTopLevelParent);
 
         //  Accounting top level parent
         String accountingTopLevelParent = service.getTopLevelParent(accounting).getName();
         System.out.println("Accounting top level parent is: " + accountingTopLevelParent);
+
+        // Developer top level parent
+        String developerTopLevelParent = service.getTopLevelParent(cheif).getName();
+        System.out.println("Developer top level parent is: " + developerTopLevelParent);
+
+        // Back end top level parent
+        String backEndTopLevelParent = service.getTopLevelParent(developer).getName();
+        System.out.println("Backend top level parent is: " + backEndTopLevelParent);
+
+        // Front end top level parent
+        String frontEndTopLevelParent = service.getTopLevelParent(developer).getName();
+        System.out.println("Frontend top level parent is: " + frontEndTopLevelParent);
+
+        // DevOps top level parent
+        String devOpsTopLevelParent = service.getTopLevelParent(backEnd).getName();
+        System.out.println("DevOps top level parent is: " + devOpsTopLevelParent);
+     
+        // Designer top level parent
+        String designTopLevelParent = service.getTopLevelParent(frontEnd).getName();
+        System.out.println("Designer top level parent is: " + designTopLevelParent);
 
         // employee count for developer and all its children
         long EmployeesCount = service.getEmployeeCountForCompanyAndChildren(developer, companies);
