@@ -83,7 +83,7 @@ public class Main
 
         System.out.println(sortedByCount);
 
-        // create Iterator 'items' to be able to switch to next DescendingSortedMap elements from beginning
+        // create Iterator 'items' to be able to switch to next sortedByCount map elements from beginning
         Iterator<Map.Entry<String, Integer>> items = sortedByCount.entrySet().iterator();
 
         // define a path where first 20 pairs will be written
@@ -118,8 +118,6 @@ public class Main
         // writing first 20 names to the file test.txt
         for (int i = 0; i < 20; i++) 
         {
-            // printing the result
-            System.out.println(names.get(i));
             // write proper name to the file
             Files.write(path, (names.get(i) + "\n").getBytes(), StandardOpenOption.APPEND);
 
