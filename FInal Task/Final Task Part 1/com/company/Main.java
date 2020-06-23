@@ -90,7 +90,7 @@ public class Main
         Iterator<Map.Entry<String, Integer>> items = sortedByCount.entrySet().iterator();
 
         // define a path where first 20 pairs will be written
-        Path path = Paths.get(""C:\\Users\\StelLify\\Desktop\\test.txt"");
+        Path path = Paths.get("C:\\Users\\StelLify\\Desktop\\test.txt");
         
         // write first 20 pairs to the file test.txt
         for (int i = 0; i < 20; i++) 
