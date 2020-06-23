@@ -52,15 +52,15 @@ public class Main {
 
         // Designer top level parent
         String designTopLevelParent = service.getTopLevelParent(design).getName();
-        System.out.println("Designer top level parent: " + designTopLevelParent);
+        System.out.println("Designer top level parent is: " + designTopLevelParent);
 
         //  Designer top level parent
         String lawyerTopLevelParent = service.getTopLevelParent(lawyer).getName();
-        System.out.println("Lawyer top level parent: " + lawyerTopLevelParent);
+        System.out.println("Lawyer top level parent is: " + lawyerTopLevelParent);
 
         //  Accounting top level parent
         String accountingTopLevelParent = service.getTopLevelParent(accounting).getName();
-        System.out.println("Accounting top level parent: " + accountingTopLevelParent);
+        System.out.println("Accounting top level parent is: " + accountingTopLevelParent);
 
         // employee count for developer and all its children
         long EmployeesCount = service.getEmployeeCountForCompanyAndChildren(developer, companies);
