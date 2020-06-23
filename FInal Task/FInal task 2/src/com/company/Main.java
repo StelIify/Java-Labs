@@ -50,23 +50,23 @@ public class Main {
             System.out.println(company.getName());
         }
 
-        // define Designer top level parent
+        // Designer top level parent
         String designTopLevelParent = service.getTopLevelParent(design).getName();
         System.out.println("Designer top level parent: " + designTopLevelParent);
 
-        // define Designer top level parent
+        //  Designer top level parent
         String lawyerTopLevelParent = service.getTopLevelParent(lawyer).getName();
         System.out.println("Lawyer top level parent: " + lawyerTopLevelParent);
 
-        // define Accounting top level parent
+        //  Accounting top level parent
         String accountingTopLevelParent = service.getTopLevelParent(accounting).getName();
         System.out.println("Accounting top level parent: " + accountingTopLevelParent);
 
-        // define employee count for developer and all its children
+        // employee count for developer and all its children
         long EmployeesCount = service.getEmployeeCountForCompanyAndChildren(developer, companies);
         System.out.println("Employees Amount for developer and all its children: " + EmployeesCount);
 
-        // define employee count for developer and all its children
+        // employee count for developer and all its children
         long EmployeesCount2 = service.getEmployeeCountForCompanyAndChildren(cheif, companies);
         System.out.println("Employees Amount for cheif and all its children: " + EmployeesCount2);
 
