@@ -4,7 +4,7 @@
  *
  * Classname Main
  *  Final Testing
- 
+ **/
  
 package com.company;
 
@@ -15,46 +15,57 @@ public class Main {
 
     public static void main(String[] args)
     {
-        CompanyServiceImpl service;
-        service = new CompanyServiceImpl();
+        CompanyServiceImpl service = new CompanyServiceImpl();
 
-        Company chief = new Company(null, 20);
-        Company lawyer = new Company(chief, 5);
-        Company developer = new Company(chief, 15);
-        Company backEnd = new Company(developer, 10);
-        Company devOps = new Company(backEnd, 5);
-        Company frontEnd = new Company(developer, 15);
-        Company design = new Company(frontEnd, 5);
-        Company accounting = new Company(null, 20);
+        // create Company objects
+        Company cheif = new Company(null, 50);
+        Company accounting = new Company(null, 30);
+        Company lawyer = new Company(cheif, 20);
+        Company developer = new Company(cheif, 5);
+        Company backEnd = new Company(developer, 4);
+        Company frontEnd = new Company(developer, 4);
+        Company devOps = new Company(backEnd, 2);
+        Company design = new Company( frontEnd, 2);
 
+        // add all companies to ArrayList
+        List<Company> companies = new ArrayList<>
+         (
+                Arrays.asList(
+                        cheif,
+                        accounting,
+                        lawyer,
+                        developer,
+                        backEnd,
+                        frontEnd,
+                        devOps,
+                        design
+                )
+        );
 
-        // test 1
-        System.out.println(service.getTopLevelParent(chief));
-        System.out.println(service.getTopLevelParent(accounting));
-        System.out.println(service.getTopLevelParent(lawyer));
-        System.out.println(service.getTopLevelParent(developer));
-        System.out.println(service.getTopLevelParent(backEnd));
-        System.out.println(service.getTopLevelParent(devOps));
-        System.out.println(service.getTopLevelParent(frontEnd));
-        System.out.println(service.getTopLevelParent(design));
+        System.out.println("All existing companies: ");
+        for (Company company : companies) {
+            System.out.println(company.getName());
+        }
 
-        // test 2
+        // define Designer top level parent
+        String designTopLevelParent = service.getTopLevelParent(design).getName();
+        System.out.println("Designer top level parent: " + designTopLevelParent);
 
-        List<Company> companies = new ArrayList<>();
+        // define Designer top level parent
+        String lawyerTopLevelParent = service.getTopLevelParent(lawyer).getName();
+        System.out.println("Lawyer top level parent: " + lawyerTopLevelParent);
 
-        companies.add(chief);
-        companies.add(accounting);
-        companies.add(lawyer);
-        companies.add(developer);
-        companies.add(backEnd);
-        companies.add(devOps);
-        companies.add(frontEnd);
-        companies.add(design);
+        // define Accounting top level parent
+        String accountingTopLevelParent = service.getTopLevelParent(accounting).getName();
+        System.out.println("Accounting top level parent: " + accountingTopLevelParent);
 
-        //System.out.println(service.getEmployeeCountForCompanyAndChildren(acounting, companies));
-        System.out.println(service.getEmployeeCountForCompanyAndChildren(chief, companies));
+        // define employee count for developer and all its children
+        long EmployeesCount = service.getEmployeeCountForCompanyAndChildren(developer, companies);
+        System.out.println("Employees Amount for developer and all its children: " + EmployeesCount);
 
-        //   System.out.println(service.getEmployeeCountForCompanyAndChildren(frontEnd, (List<Company>) chief));
+        // define employee count for developer and all its children
+        long EmployeesCount2 = service.getEmployeeCountForCompanyAndChildren(cheif, companies);
+        System.out.println("Employees Amount for cheif and all its children: " + EmployeesCount2);
 
     }
 }
