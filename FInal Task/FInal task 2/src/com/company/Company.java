@@ -9,6 +9,8 @@
 
 package com.company;
 
+import java.util.ArrayList;
+
 public class Company
 {
     // parent for this company nullable, when there is no parent for this company
