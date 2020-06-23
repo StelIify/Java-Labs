@@ -15,7 +15,8 @@ public class Company
     private Company parent;
     private long employeesCount;
     private String name;
-
+    private ArrayList<Company> children;
+    
     public Company(Company parent, long employeesCount, String name)
     {
         this.parent = parent;
@@ -51,6 +52,13 @@ public class Company
     public void setName(String name) {
         this.name = name;
     }
+    
+     public ArrayList<Company> getChildren() {
+        return children;
+    }
 
+    public void setChildren(ArrayList<Company> children) {
+        this.children = children;
+    }
 
 }
