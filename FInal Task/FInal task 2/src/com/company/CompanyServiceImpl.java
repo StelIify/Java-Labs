@@ -1,3 +1,10 @@
+/**
+ * @author Oleksandr Zorenko KNUTE
+ * @version 23.06.2020
+ *
+ * Classname CompanyServiceImpl
+ *  Final Testing
+ **/
 package com.company;
 
 import java.util.List;
