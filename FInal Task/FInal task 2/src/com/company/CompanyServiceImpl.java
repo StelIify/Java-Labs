@@ -44,18 +44,26 @@ public class CompanyServiceImpl implements ICompanyService
     @Override
     public long getEmployeeCountForCompanyAndChildren(Company company, List<Company> companies)
     {
-        // add employees count to total counter
+        /*
         long count = company.getEmployeesCount();
 
-        // get current company's children to count their employees
+        
         List<Company> children = company.getChildren();
 
         for (Company child : children) {
-            // get children's children
+            
             count += this.getEmployeeCountForCompanyAndChildren(child, companies);
         }
 
-        // return counted value
+        
         return count;
+        */
+        companies.add(company);
+
+        long employees = 0;
+
+        employees = companies.stream().mapToLong(Company::getEmployeesCount).sum();
+
+        return employees;
     }
 }
