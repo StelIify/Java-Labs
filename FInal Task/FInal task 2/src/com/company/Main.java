@@ -21,15 +21,15 @@ public class Main {
     {
         CompanyServiceImpl service = new CompanyServiceImpl();
 
-        // create Company objects
-        Company cheif = new Company(null, 50);
-        Company accounting = new Company(null, 30);
-        Company lawyer = new Company(cheif, 20);
-        Company developer = new Company(cheif, 5);
-        Company backEnd = new Company(developer, 4);
-        Company frontEnd = new Company(developer, 4);
-        Company devOps = new Company(backEnd, 2);
-        Company design = new Company( frontEnd, 2);
+       / create Company objects
+        Company cheif = new Company("cheif", null, 40);
+        Company accounting = new Company("accounting", null, 22);
+        Company lawyer = new Company("lawyer", cheif, 14);
+        Company developer = new Company("developer", cheif, 7);
+        Company backEnd = new Company("backEnd", developer, 3);
+        Company frontEnd = new Company("frontEnd", developer, 1);
+        Company devOps = new Company("devOps", backEnd, 3);
+        Company design = new Company("design", frontEnd, 3);
 
         // add all companies to ArrayList
         List<Company> companies = new ArrayList<>
