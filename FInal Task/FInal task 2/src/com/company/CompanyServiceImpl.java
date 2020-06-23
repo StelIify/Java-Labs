@@ -55,7 +55,7 @@ public class CompanyServiceImpl implements ICompanyService
             
             if (currentChild.getChildren().size() > 0)
             {
-                // add companies to children list for future processing
+                // add companies to children list 
                 children.addAll(currentChild.getChildren());
             }
             count += currentChild.getEmployeesCount();
