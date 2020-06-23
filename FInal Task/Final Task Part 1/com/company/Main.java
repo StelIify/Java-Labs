@@ -120,7 +120,5 @@ public class Main
         {
             // write proper name to the file
             Files.write(path, (names.get(i) + "\n").getBytes(), StandardOpenOption.APPEND);
-
-
-    }
+        }
 }
