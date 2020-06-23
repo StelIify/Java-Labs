@@ -60,6 +60,12 @@ public class CompanyServiceImpl implements ICompanyService
             }
             count += currentChild.getEmployeesCount();
             children.remove(currentChild);
+            
+            for (Company child : children) 
+            {
+                // get children's children
+                count += this.getEmployeeCountForCompanyAndChildren(child, companies);
+            }
         }
         return count;
     }
