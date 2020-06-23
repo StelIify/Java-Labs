@@ -57,20 +57,6 @@ public class Main
                 .replaceAll("[\\s\\.\\?\\!,\\-\":;]+", " ")
                 .split("\\s+");
 
-        // create String which will contain distinct words
-        String uniqueWords = "";
-
-        for (String word : allWords)
-        {
-            if (!uniqueWords.contains(word))
-            {
-                uniqueWords += word + " ";
-            }
-        }
-
-        // Convert string to array splitting it by spaces
-        String[] uniqueWordsArray = uniqueWords.split(" ");
-
         //For each distinct word in the text calculate the number of occurrence.
         Map<String, Integer> wordCount = new HashMap<>();
         for (String word: allWords)
@@ -100,64 +86,46 @@ public class Main
 
         System.out.println(sortedByCount);
 
-        //Writing to a file 20 pairs
-        File file = new File(outputFilePath);
+        // create Iterator 'items' to be able to switch to next DescendingSortedMap elements from beginning
+        Iterator<Map.Entry<String, Integer>> items = sortedByCount.entrySet().iterator();
 
-        BufferedWriter bf = null;;
-
-        try{
-            //create new BufferedWriter for the output file
-            bf = new BufferedWriter( new FileWriter(file) );
-
-            //iterate map entries
-            for(int i =0; i<20;i++)
-            {
-                for (Entry<String, Integer> entry : sortedByCount.entrySet())
-                {
-                    //put key and value separated by a colon
-                    bf.write(entry.getKey() + ":" + entry.getValue());
-
-                    //new line
-                    bf.newLine();
-                }
-                bf.flush();
-            }
-
-        }
-        catch(IOException e)
+        // define a path where first 20 pairs will be written
+        Path path = Paths.get(""C:\\Users\\StelLify\\Desktop\\test.txt"");
+        
+        // write first 20 pairs to the file test.txt
+        for (int i = 0; i < 20; i++) 
         {
-            e.printStackTrace();
-        }
-        finally
-        {
-            try
-            {
-                bf.close();
-            }
-            catch(Exception e){}
+            Map.Entry<String, Integer> pair = items.next(); // get next item
+            System.out.format("Word: %s, occurences: %d%n", pair.getKey(), pair.getValue());
+            // write occurrence pair to the file
+            Files.write(path, (pair.getKey() + "\n").getBytes(), StandardOpenOption.APPEND);
         }
 
-        //Find all the proper names and writing them to a file
+        //Find all the proper names
         List<String> names = new ArrayList<>();
-        int count = 0;
 
         Pattern p = Pattern.compile("\\b[A-Z][a-z]{3,}\\b");
         Matcher m = p.matcher(text);
-        while (m.find() && count < 20)
+        while (m.find())
         {
             String word = m.group();
             names.add(word);
-            count++;
         }
+        
+        // Count them and arrange in alphabetic order.
+        Collections.sort(names); // sort properNames in alphabetic order
+        int properNamesAmount = names.size(); // count proper names
+        System.out.println("Proper names amount: " + properNamesAmount);
 
-        String namesToWrite = "";
-        for(String name : names)
+        // -----------------------------------------------------------------------
+        // First 20 pairs and names write into to a file test.txt
+        // writing first 20 names to the file test.txt
+        for (int i = 0; i < 20; i++) 
         {
-            namesToWrite += name + System.lineSeparator();
-        }
-
-        Path path = Paths.get("C:\\Users\\StelLify\\Desktop\\test.txt");
-        Files.write(path, namesToWrite.getBytes());
+            // printing the result
+            System.out.println(names.get(i));
+            // write proper name to the file
+            Files.write(path, (names.get(i) + "\n").getBytes(), StandardOpenOption.APPEND);
 
 
     }
