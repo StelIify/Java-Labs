@@ -1,3 +1,12 @@
+/**
+ * @author Oleksandr Zorenko KNUTE
+ * @version 23.06.2020
+ *
+ * Classname Main
+ *  Final Testing
+ *  Task description: create POJO class Company
+ **/
+
 package com.company;
 
 public class Company
@@ -33,12 +42,4 @@ public class Company
         this.employeesCount = employeesCount;
     }
 
-    @Override
-    public String toString()
-    {
-        return "Company{" +
-                "parent=" + parent +
-                ", employeesCount=" + employeesCount +
-                '}';
-    }
 }
