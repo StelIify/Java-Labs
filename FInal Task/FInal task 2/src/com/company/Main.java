@@ -21,8 +21,8 @@ public class Main {
     {
         CompanyServiceImpl service = new CompanyServiceImpl();
 
-       / create Company objects
-        Company cheif = new Company(null, 40, "cheif",);
+        //create Company objects
+        Company cheif = new Company(null, 40, "cheif");
         Company accounting = new Company( null, 22, "accounting");
         Company lawyer = new Company(cheif, 14, "lawyer");
         Company developer = new Company(cheif, 7, "lawyer");
