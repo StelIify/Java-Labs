@@ -51,15 +51,15 @@ public class Main {
         }
 
         // Designer top level parent
-        String designTopLevelParent = service.getTopLevelParent(design).getName();
+        String designTopLevelParent = service.getTopLevelParent(design);
         System.out.println("Designer top level parent is: " + designTopLevelParent);
 
         //  Designer top level parent
-        String lawyerTopLevelParent = service.getTopLevelParent(lawyer).getName();
+        String lawyerTopLevelParent = service.getTopLevelParent(lawyer);
         System.out.println("Lawyer top level parent is: " + lawyerTopLevelParent);
 
         //  Accounting top level parent
-        String accountingTopLevelParent = service.getTopLevelParent(accounting).getName();
+        String accountingTopLevelParent = service.getTopLevelParent(accounting);
         System.out.println("Accounting top level parent is: " + accountingTopLevelParent);
 
         // employee count for developer and all its children
