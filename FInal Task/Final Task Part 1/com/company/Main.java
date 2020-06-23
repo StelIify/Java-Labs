@@ -44,9 +44,6 @@ import java.util.stream.Collectors;
 
 public class Main
 {
-    //File to which we are going to write
-    final static String outputFilePath = "C:\\Users\\StelLify\\Desktop\\test.txt";
-
     public static void main(String[] args) throws IOException
     {
         // get text from the file
@@ -104,7 +101,7 @@ public class Main
         //Find all the proper names
         List<String> names = new ArrayList<>();
 
-        Pattern p = Pattern.compile("\\b[A-Z][a-z]{3,}\\b");
+        Pattern p = Pattern.compile("\\b[A-Z][a-z]{4,}\\b");
         Matcher m = p.matcher(text);
         while (m.find())
         {
@@ -118,7 +115,6 @@ public class Main
         System.out.println("Proper names amount: " + properNamesAmount);
 
         // -----------------------------------------------------------------------
-        // First 20 pairs and names write into to a file test.txt
         // writing first 20 names to the file test.txt
         for (int i = 0; i < 20; i++) 
         {
