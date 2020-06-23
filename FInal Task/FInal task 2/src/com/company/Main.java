@@ -27,7 +27,7 @@ public class Main {
         Company lawyer = new Company(cheif, 14, "lawyer");
         Company developer = new Company(cheif, 7, "lawyer");
         Company backEnd = new Company(developer, 3, "backEnd");
-        Company frontEnd = new Company(, developer, 1, "frontEnd);
+        Company frontEnd = new Company(developer, 1, "frontend";
         Company devOps = new Company(backEnd, 3, "devOps");
         Company design = new Company(frontEnd, 3, "design");
 
