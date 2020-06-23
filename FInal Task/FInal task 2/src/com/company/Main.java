@@ -3,7 +3,10 @@
  * @version 23.06.2020
  *
  * Classname Main
- *  Final Testing
+ * Final Testing
+ *
+ * Create a test set of companies in your main class.
+ * Take for this set IT-companies: Chief, Lawyer, Developer (Design, Front-end, Back-end, DevOps). See attch.
  **/
  
 package com.company;
