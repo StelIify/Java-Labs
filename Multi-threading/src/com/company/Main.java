@@ -84,11 +84,11 @@ public class Main {
          //Comparing the duration results of both methods
 
         if (executionTime1 > executionTime2) {
-            System.out.println("Execution was quicker during with Multi-Threading calls");
+            System.out.println("Execution was quicker during Multi-Threading calls");
         } else if (executionTime1 < executionTime2) {
-            System.out.println("Execution was quicker during with consequent calls.");
+            System.out.println("Execution was quicker during consequent calls.");
         } else {
-            System.out.println("Both cases take the same execution time");
+            System.out.println("Both cases took the same execution time");
         }
 
     }
