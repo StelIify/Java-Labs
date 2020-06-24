@@ -25,6 +25,10 @@ public class Company
         this.employeesCount = employeesCount;
         this.name = name;
         this.children = new ArrayList<>();
+       
+        if (parent != null) {
+            parent.addChild(this);
+        }
     }
     public Company()
     {
