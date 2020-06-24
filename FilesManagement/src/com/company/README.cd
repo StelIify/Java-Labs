@@ -1,0 +1,11 @@
+Program output:
+
+The total number of logs (lines): 2845607
+
+The total number of ERROR logs: (using String.split) 361
+
+The total number of ERROR logs: (using Files.lines) 361
+
+It took 193 ms. to count ERROR logs using String.split
+
+It took 10613 ms. to count ERROR logs using Files.lines
