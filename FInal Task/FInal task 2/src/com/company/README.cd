@@ -44,11 +44,19 @@ devOps
 
 design
 
-Designer top level parent: cheif
-
 Lawyer top level parent: cheif
 
 Accounting top level parent: accounting
+
+Developer top level parent: cheif
+
+BackEnd top level parent: developer
+
+FrontEnd top level parent: developer
+
+DevOps top level parent: backEnd
+
+Design top level parent: frontEnd
 
 Employees Amount for developer and all its children: 100
 Employees Amount for cheif and all its children: 140
