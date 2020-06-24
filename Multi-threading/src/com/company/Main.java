@@ -46,7 +46,6 @@ public class Main {
         long executionTime1 = ChronoUnit.MILLIS.between(start1, finish1);
         System.out.println("Execution time: : " + executionTime1 + " MS.");
 
-
         //Repeat the above task in parallel way. Multi-threading.
         System.out.println("Repeat the above task in parallel way. Multi-threading");
         LocalDateTime start2 = LocalDateTime.now();
