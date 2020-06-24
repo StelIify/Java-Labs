@@ -47,14 +47,12 @@ public class CompanyServiceImpl implements ICompanyService
         
         long count = company.getEmployeesCount();
 
-        
         List<Company> children = company.getChildren();
 
         for (Company child : children) {
             
             count += this.getEmployeeCountForCompanyAndChildren(child, companies);
         }
-
         
         return count;
         
