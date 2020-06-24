@@ -5,6 +5,9 @@
  * Classname Main
  *  Final Testing
  *  Task description: create POJO class Company
+ *
+ * Create a test set of companies in your main class.
+ * Take for this set IT-companies: Chief, Lawyer, Developer (Design, Front-end, Back-end, DevOps)
  **/
 
 package com.company;
@@ -67,5 +70,4 @@ public class Company
     public void setChildren(ArrayList<Company> children) {
         this.children = children;
     }
-
 }
