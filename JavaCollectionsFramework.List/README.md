@@ -9,32 +9,32 @@ Result:
 
 It took 19 milliseconds to initialize ArrayList and 37 milliseconds to initialize LinkedList
 The fastest result was for ArayList
-
+/*---------------------------------------------------------------------------------------*/
 For ArrayList it takes: 
 39 ms. to add elements at the beginning;
 13 ms. to add elements in the middle;
 0 ms. to add elements at the end
-
+/*---------------------------------------------------------------------------------------*/
 For LinkedList it takes: 
 1 ms. to add elements at the beginning;
 221 ms. to add elements in the middle;
 0 ms. to add elements at the end
-
+/*---------------------------------------------------------------------------------------*/
 For ArrayList it takes: 
 5 ms. to update elements at the beginning;
 70 ms. to update elements in the middle;
 19 ms. to update elements at the end
-
+/*---------------------------------------------------------------------------------------*/
 For LinkedList it takes: 
 0 ms. to update elements at the beginning;
 246 ms. to update elements in the middle;
 14 ms. to update elements at the end
-
+/*---------------------------------------------------------------------------------------*/
 For ArrayList it takes: 
 61 ms. to delete elements at the beginning;
 14 ms. to delete elements in the middle;
 0 ms. to delete elements at the end
-
+/*---------------------------------------------------------------------------------------*/
 For LinkedList it takes: 
 3 ms. to delete elements at the beginning;
 250 ms. to delete elements in the middle;
