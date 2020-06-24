@@ -24,6 +24,7 @@ public class Company
         this.parent = parent;
         this.employeesCount = employeesCount;
         this.name = name;
+        this.children = new ArrayList<>();
     }
     public Company()
     {
