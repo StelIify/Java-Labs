@@ -8,6 +8,7 @@ JavaCollectionsFramework. List.
 Result:
 
 It took 19 milliseconds to initialize ArrayList and 37 milliseconds to initialize LinkedList
+
 The fastest result was for ArayList
 ---------------------------------------------------------------------------------------
 For ArrayList it takes: 
