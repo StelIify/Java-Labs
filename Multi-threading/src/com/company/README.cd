@@ -1,0 +1,27 @@
+There are 23 ERROR lines. on 2019-10-21
+Execution time: 5378
+There are 13 ERROR lines. on 2019-11-13
+Execution time: 2719
+There are 23 ERROR lines. on 2020-01-03
+Execution time: 2266
+There are 77 ERROR lines. on 2020-01-08
+Execution time: 2496
+There are 21 ERROR lines. on 2020-02-04
+Execution time: 2477
+Execution time: 15415 MS.
+
+Repeat the above task in parallel way. Multi-threading
+
+There are 77 ERROR lines. on 2020-01-08
+Execution time: 6562
+There are 13 ERROR lines. on 2019-11-13
+Execution time: 6687
+There are 23 ERROR lines. on 2019-10-21
+Execution time: 6703
+There are 23 ERROR lines. on 2020-01-03
+Execution time: 6718
+There are 21 ERROR lines. on 2020-02-04
+Execution time: 6562
+Execution time: 6796 MS.
+
+Execution was quicker during Multi-Threading calls
